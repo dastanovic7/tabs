@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.tabs input {
+    display: none;
+}
+.tabs img {
+    width: 300px;
+    height: 330px;
+    animation: 1s alternate img;
+}
+@keyframes img {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#html:checked ~ .css,
+#html:checked ~ .js,
+#html:checked ~ .Садыр {
+    display: none;
+}
+#css:checked ~ .html,
+#css:checked ~ .js,
+#css:checked ~ .Садыр {
+    display: none;
+}
+#js:checked ~ .html,
+#js:checked ~ .css,
+#js:checked ~ .Садыр {
+    display: none;
+}
+#Садыр:checked ~ .html,
+#Садыр:checked ~ .css,
+#Садыр:checked ~ .js {
+    display: none;
+}
+#hero {
+    background: linear-gradient(10deg,#FFdd00,pink,#66ff00,orangered);
+    min-height: 100vh;
+}
+.labels label {
+    padding: 10px 30px;
+    background: linear-gradient(20deg,#02ff06,#0064ff);
+    border: 2px solid green;
+    border-radius: 10px;
+    color: yellow;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: .4s;
+    cursor: pointer;
+}
+.labels label:hover {
+    background: linear-gradient(20deg,#0064ff,#02ff06);
+}
+.labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    animation: ani 1s alternate;
+}
+@keyframes ani {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+.tabs img {
+    width: 200px;
+    height: 200px;
+}
